@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: "Noto Serif JP", serif;
+  line-height: 1.8;
+  background-color: #f9f7f3;
+  background-image: radial-gradient(#d8d3c3 1px, transparent 1px);
+  background-size: 8px 8px;
+  color: #333;
+}
+
+header {
+  background-color: #6b1e3a;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.content-section {
+  display: flex;
+  align-items: center;
+  padding: 60px 20px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content-section img {
+  width: 40%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.content-section .text {
+  flex: 1;
+}
+
+.content-section h2 {
+  color: #6b1e3a;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .content-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .reverse {
+    flex-direction: column;
+  }
+  .content-section img {
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .drop1,
+    .drop3 {
+      display: none;
+    }
+  }
+}
+
+.scroll-indicator {
+  position: fixed;
+  right: 20px;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.drop-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.drop1 {
+  width: 16px;
+  height: 16px;
+}
+
+.drop2 {
+  width: 24px;
+  height: 24px;
+}
+
+.drop3 {
+  width: 30px;
+  height: 30px;
+}
+
+.scroll-indicator svg {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  transition: transform 0.15s ease-out;
+}
+
+/* Chrome / Safari / Edge */
+body::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* Firefox */
+body {
+  scrollbar-width: none !important;
+}
+
+/* IE (一応) */
+body {
+  -ms-overflow-style: none !important;
+}
