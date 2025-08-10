@@ -56,6 +56,48 @@ header p {
   flex-direction: row-reverse;
 }
 
+.effects-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  flex: 1 1 300px;
+}
+
+.card h2 {
+  color: #8b2e4d; /* Bisoらしい紫蘇カラー */
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card li {
+  margin-bottom: 12px;
+  padding-left: 1.5em;
+  position: relative;
+}
+
+.card li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #8b2e4d;
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
   .content-section {
     flex-direction: column;
