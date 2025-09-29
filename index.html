@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biso ― 紫蘇酵素ドリンク</title>
+    <title>兵藤ファーム ― 地域と大地と人を繋ぎ直す</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap"
@@ -11,69 +11,108 @@
     />
   </head>
   <body>
-    <header>
-      <h1>Biso ― 紫蘇酵素ドリンク</h1>
-      <p>こころほどける、しそのしずく</p>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">兵藤ファーム</a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">ホーム</a></li>
+          <li><a href="about.html" class="nav-link">農場について</a></li>
+          <li><a href="products.html" class="nav-link">商品</a></li>
+          <li><a href="biso.html" class="nav-link">Biso酵素ドリンク</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero-section">
+      <div class="hero-content">
+        <h1>兵藤ファーム</h1>
+        <p class="hero-subtitle">
+          地域と大地と人を繋ぎ直し、素材の力を届け、第一次産業の未来を紡ぎ直す
+        </p>
+        <p class="hero-description">
+          大地から生まれるワクワクの物語をお届けします
+        </p>
+        <a href="products.html" class="cta-button">商品を見る</a>
+      </div>
+      <!-- <div class="hero-image">
+        <img src="images/farm_landscape.jpg" alt="兵藤ファームの風景" />
+      </div> -->
     </header>
 
-    <!-- Section 1 -->
+    <!-- Mission Section -->
     <section class="content-section">
-      <img src="images/shiso_juice_dummy1.jpeg" alt="Biso ボトル" />
       <div class="text">
-        <h2>自然の恵みを一滴に</h2>
+        <h2>私たちのミッション</h2>
         <p>
-          忙しさに追われる日々の中で、ふと立ち止まるための一滴。<br />
-          Bisoは、古来より薬・香・食として人に寄り添ってきた赤紫蘇と、<br />
-          植物発酵のちからをかけ合わせた、自然由来の酵素ドリンクです。<br /><br />
-          香りにふれて、しずくを含む。<br />
-          心と身体が静かにめぐりはじめるその感覚は、<br />
-          きっと何度でも、あなたを整えてくれるはず。
+          人の暮らしを支えてきた農業は、いま大きな転換点に立たされています。<br />
+          高齢化や担い手不足、休耕地の増加――<br />
+          地域と大地のつながりが弱まりつつあるのが現実です。<br /><br />
+          だからこそ私たちは、農業を「過去からの営み」ではなく<br />
+          「未来を育む希望」として捉え直します。<br /><br />
+          大地の恵みと人の営みをもう一度結び直し、農業の価値を高め、<br />
+          持続可能で誇りある産業へと育てていく。<br />
+          それが兵藤ファームのミッションです。
+        </p>
+      </div>
+      <img src="images/farmer_hands.jpg" alt="農業への想い" />
+    </section>
+
+    <!-- Vision Section -->
+    <section class="content-section reverse">
+      <img src="images/shiso_field.jpg" alt="赤紫蘇畑" />
+      <div class="text">
+        <h2>可能性へのワクワク感</h2>
+        <p>
+          その挑戦は、課題からではなく、可能性へのワクワク感から始まります。<br /><br />
+          休耕地を活かして、眠る大地を未来の畑に変えること、<br />
+          第一次産業の価値を高め、もっと魅力的な仕事に育てること、<br />
+          生産者が主役となり、輝ける舞台をつくること、<br /><br />
+          そして赤紫蘇という地域の宝物から、<br />
+          まだ見ぬ商品や体験を生み出すこと。<br /><br />
+          「こんなことができるかもしれない！」<br />
+          「こんな未来を一緒に描けるかもしれない！」
         </p>
       </div>
     </section>
 
-    <!-- Section 2 -->
-    <section class="content-section">
-      <img src="images/shiso3.jpg" alt="Biso グラス" />
-      <div class="text">
-        <h2>素材そのままの色と香り</h2>
+    <!-- Products Preview -->
+    <section class="products-preview">
+      <h2>主要商品</h2>
+      <div class="product-cards">
+        <div class="product-card">
+          <img
+            src="images/shiso_juice_dummy1.jpeg"
+            alt="Biso 紫蘇酵素ドリンク"
+          />
+          <div class="product-info">
+            <h3>Biso ― 紫蘇酵素ドリンク</h3>
+            <p>こころほどける、しそのしずく</p>
+            <a href="biso.html" class="product-link">詳しく見る</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story-section">
+      <div class="story-content">
+        <h2>大地から生まれる物語</h2>
         <p>
-          保存料や着色料を使わず、<br />
-          素材本来の色・香り・味わいを大切にしています。<br />
-          毎日の健康習慣として、炭酸水やお湯で割ってお楽しみください。
+          私たちが届けられるのは、単なる農産物ではなく、<br />
+          大地から生まれるワクワクの物語です。<br /><br />
+          地域の宝物である赤紫蘇と、国産素材128種類をじっくりと発酵させた酵素ドリンク。<br />
+          保存料・着色料・香料は一切不使用で、自然のままの味わいとやさしさを大切にしています。<br /><br />
+          赤紫蘇の彩りと発酵の恵みが、あなたの毎日を心地よく支えます。
         </p>
       </div>
     </section>
 
-    <!-- Section 3 -->
-    <section class="effects-section">
-      <div class="card">
-        <h2>紫蘇の効果</h2>
-        <ul>
-          <li>
-            ペリルアルデヒドによる殺菌・防腐作用で食中毒予防や魚介の解毒に効果
-          </li>
-          <li>ストレス軽減、疲労回復、貧血予防に役立つ栄養素を含む</li>
-          <li>ビタミン・ミネラルが豊富で免疫力や美肌、粘膜の健康維持に最適</li>
-          <li>赤紫蘇は特に抗酸化作用が強く、漢方や梅干しにも利用される</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>酵素の効果</h2>
-        <ul>
-          <li>消化酵素は栄養吸収を助け、代謝酵素は体内活動をサポート</li>
-          <li>腸内環境改善、便秘解消、疲労回復、肌荒れ改善に効果</li>
-          <li>加齢で酵素が減少するため、食品やドリンクで補うことが推奨</li>
-          <li>
-            朝に摂取すると代謝・排泄が促進され、デトックスやダイエット効果も期待
-          </li>
-          <li>免疫力向上や美容、体調管理に欠かせない成分</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Scroll -->
+    <!-- Scroll Indicator (reused from original) -->
     <div class="scroll-indicator">
       <div class="drop-group">
         <svg class="drop1" viewBox="0 0 24 24">
@@ -97,6 +136,41 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>兵藤ファーム</h3>
+          <p>地域と大地と人を繋ぎ直す</p>
+        </div>
+        <div class="footer-section">
+          <h3>ナビゲーション</h3>
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="about.html">農場について</a></li>
+            <li><a href="products.html">商品</a></li>
+            <li><a href="biso.html">Biso酵素ドリンク</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+
+      // Close menu when clicking on a link
+      document.querySelectorAll(".nav-link").forEach((n) =>
+        n.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        })
+      );
+    </script>
   </body>
 </html>
