@@ -4,8 +4,6 @@ body {
   font-family: "Noto Serif JP", serif;
   line-height: 1.8;
   background-color: #f9f7f3;
-  background-image: radial-gradient(#d8d3c3 1px, transparent 1px);
-  background-size: 8px 8px;
   color: #333;
 }
 
